@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome Page</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top navigation bar */
+.navbar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+/* Buttons */
+.navbar button {
+    font-size: 25px;
+    margin-left: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+/* Centered header */
+.center-header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-header h1 {
+    font-size: 40px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="navbar">
+    <button>Home</button>
+    <button>Login</button>
+</div>
+
+<div class="center-header">
+    <h1>Welcome to the web</h1>
+</div>
+
+</body>
+</html>
