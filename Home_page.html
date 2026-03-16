@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Welcome Page</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:black;
+    color:white;
+}
+
+/* Navigation bar */
+.navbar{
+    position:absolute;
+    top:10px;
+    right:20px;
+}
+
+.navbar button{
+    font-size:25px;
+    margin-left:10px;
+    padding:5px 15px;
+    background:black;
+    color:white;
+    border:2px solid white;
+    cursor:pointer;
+}
+
+/* Center content */
+.page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+/* Hide pages */
+.hidden{
+    display:none;
+}
+
+/* Login form */
+input{
+    padding:10px;
+    margin:10px;
+    font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+<button onclick="showHome()">Home</button>
+<button onclick="showLogin()">Login</button>
+</div>
+
+<!-- Home Page -->
+<div id="homePage" class="page">
+<h1>Welcome to the web</h1>
+</div>
+
+<!-- Login Page -->
+<div id="loginPage" class="page hidden">
+<h1>Login</h1>
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+<button>Submit</button>
+</div>
+
+<script>
+function showHome(){
+    document.getElementById("homePage").classList.remove("hidden");
+    document.getElementById("loginPage").classList.add("hidden");
+}
+
+function showLogin(){
+    document.getElementById("homePage").classList.add("hidden");
+    document.getElementById("loginPage").classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
